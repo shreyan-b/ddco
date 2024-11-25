@@ -55,15 +55,10 @@ endmodule
 Counter
 Title: Simulate a 4-bit binary counter VHDL program. 
 Problem Description: Develop a program in VHDL to check 4-bit binary counter. 
-module counter (input clk, // Declare input port for the clock to allow counter to count up 
- input rstn, // Declare input port for the reset to allow the counter to be reset to 0 
+module counter (input clk, 
+ input rstn, 
 when required 
- output reg[3:0] out); // Declare 4-bit output port to get the counter values 
- 
-// This always block will be triggered at the rising edge of clk (0->1) 
- // Once inside this block, it checks if the reset is 0, then change out to zero 
- // If reset is 1, then the design should be allowed to count up, so increment the counter 
- 
+ output reg[3:0] out); 
  always @ (posedge clk) begin 
  if (! rstn) 
  out <= 0; 
@@ -83,7 +78,7 @@ input [3:0] X, Y;// Two 4-bit inputs
 output [3:0] S;
 output Co;
 wire w1, w2, w3;
-// instantiating 4 1-bit full adders in Verilog
+
 fulladder u1(X[0], Y[0], 1'b0, S[0], w1);
 fulladder u2(X[1], Y[1], w1, S[1], w2);
 fulladder u3(X[2], Y[2], w2, S[2], w3);
