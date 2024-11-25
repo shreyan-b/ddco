@@ -7,6 +7,9 @@ output sum,cout;
 assign sum=a^b^c;
 assign cout=(a&b)|(b&c)|(c&a);
 endmodule;
+
+
+
 Title: Simulate a 8:1 MUX in VHDL 
 Problem Description: Develop a program in VHDL to perform 8:1 multiplexer operation.
 module m81(out, D0, D1, D2, D3, D4, D5, D6, D7, S0, S1, S2);
@@ -27,6 +30,9 @@ default: out=1'b0;
 endcase
 end
 endmodule
+
+
+
 Title: Simulate a Flip-Flops in VHDL.
 Problem Description: Develop a program in VHDL to check the working of flip-flops (JK/D/T)
 module jk_ff ( input j, input k, input clk, output reg q); 
@@ -43,6 +49,9 @@ begin
  endcase 
 end
 endmodule 
+
+
+
 Counter
 Title: Simulate a 4-bit binary counter VHDL program. 
 Problem Description: Develop a program in VHDL to check 4-bit binary counter. 
@@ -62,6 +71,10 @@ when required
  out <= out + 1; 
  end 
 endmodule
+
+
+
+
 Ripple carry adder
 Title: Simulate a 4-bit binary counter VHDL program. 
 Problem Description: Develop a program in VHDL to check 4-bit binary counter. 
@@ -82,6 +95,9 @@ output sum,cout;
 assign sum=a^b^c;
 assign cout=(a&b)|(b&c)|(c&a);
 endmodule;
+
+
+
 4 bit ALU
 Title: Design of a 4-bit ALU. 
 Problem Description: Develop a program in VHDL to perform 4-bit ALU.
@@ -135,6 +151,10 @@ module alu(
  endcase
  end
 endmodule
+
+
+TURTH TABLE
+
 INPUT: A-1001(9),B-0011(3)
 Alu_SET Operation ALU_Result(OUTPUT)
  4'b0000: // Addition A+B 0C
